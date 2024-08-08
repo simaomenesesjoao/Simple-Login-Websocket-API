@@ -90,7 +90,7 @@ std::string Authenticator::login(std::string url, std::string username, std::str
     curl_easy_cleanup(curl);
 
     if(token==""){
-        throw std::runtime_error("Failed to login to MollyAPI. Please check your credentials.\n");            
+        throw std::runtime_error("Failed to login. Please check your credentials.\n");            
     }
 
     return token;   
@@ -116,8 +116,7 @@ void on_message(client* c, std::set<std::string> *competiton_names, websocketpp:
         std::string message = msg->get_payload();
         nlohmann::json json = nlohmann::json::parse(message);
 
-        // The json file structure that the websocket outputs is explained here
-        // https://api.mollybet.com/docs/api/api-requests-structure/asynchronous-server-message-format/
+        // The json file structure that the websocket outputs is explained in the docs
         // {
         //    ts": timestamp,
         //    data": [
@@ -222,7 +221,7 @@ public:
 
 
 int main() {
-    std::cout << "-- Simple Molly Bet API --\n";
+    std::cout << "-- Simple Login + Websocket API --\n";
 
     std::string url = "https://api.mollybet.com/v1/sessions/";
     std::string username = "devinterview";
