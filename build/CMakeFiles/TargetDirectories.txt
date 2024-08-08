@@ -1,0 +1,3 @@
+/home/simao/InterviewMB/build/CMakeFiles/task.dir
+/home/simao/InterviewMB/build/CMakeFiles/edit_cache.dir
+/home/simao/InterviewMB/build/CMakeFiles/rebuild_cache.dir
