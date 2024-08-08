@@ -13,7 +13,13 @@ All the code required to run this program is in the included Dockerfile. To buil
 sudo docker build -t task .
 sudo docker run task
 ```
-The code can also be compiled directly with CMake
+The code can also be compiled directly with CMake after installing the dependencies 
+- libcurl4-openssl-dev 
+- libwebsocketpp-dev 
+- libboost-all-dev
+- libssl-dev
+- nlohmann-json3-dev
+- cmake
 ```
 mkdir -p build
 cd build
