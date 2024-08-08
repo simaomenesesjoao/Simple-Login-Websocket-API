@@ -49,3 +49,4 @@ The `Websocket` class provides a wrapper around the `websocketpp` library that i
 
 ## Code flow
 The main function sets up the credentials, calls `Authenticator` to get a token and passes it to `Websocket`, which then runs `get_messages_til_sync` to get the `competition_names` which are finally printed out to the console.
+
